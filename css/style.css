@@ -634,6 +634,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -9622,6 +9623,7 @@ h6,
 .team img {
   position: relative;
   z-index: 1;
+  
 }
 
 .team .team-text {
