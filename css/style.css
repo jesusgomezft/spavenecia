@@ -9705,3 +9705,9 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+
+.logospa {
+  width: 100px; /* Cambia el valor según el tamaño que desees */
+  height: auto; /* Esto mantiene la proporción de aspecto */
+}
