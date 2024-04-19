@@ -39,21 +39,21 @@
             </div>
             <div class="col-lg-6 text-right">
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-primary px-2" href="">
+                    <a class="text-primary px-2" href="https://www.facebook.com/profile.php?id=61558305328547">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a class="text-primary px-2" href="">
+                    <!-- <a class="text-primary px-2" href="">
                         <i class="fab fa-twitter"></i>
                     </a>
                     <a class="text-primary px-2" href="">
                         <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="text-primary px-2" href="">
+                    </a> -->
+                    <a class="text-primary px-2" href="https://www.instagram.com/venecia_spa_movil/">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a class="text-primary pl-2" href="">
+                    <!-- <a class="text-primary pl-2" href="">
                         <i class="fab fa-youtube"></i>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -223,8 +223,8 @@
             <div class="service-item position-relative">
                 <img class="img-fluid" src="img/service-4.jpg" alt="">
                 <div class="service-text text-center">
-                    <h4 class="text-white font-weight-medium px-3">Tratamiento Facial</h4>
-                    <p class="text-white px-3 mb-3">Renueva y embellece tu piel con nuestros tratamientos faciales personalizados, diseñados para realzar tu belleza natural y rejuvenecer tu cutis.</p>
+                    <h4 class="text-white font-weight-medium px-3">Depilación con cera</h4>
+                    <p class="text-white px-3 mb-3">Elimina el vello no deseado con nuestra depilación con cera, un tratamiento efectivo y duradero para una piel suave y libre de vellos.</p>
                     <div class="w-100 bg-white text-center p-4" >
                         <a class="btn btn-primary" href="#reservar">Reservar</a>
                     </div>
@@ -241,7 +241,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-item position-relative">
+            <!-- <div class="service-item position-relative">
                 <img class="img-fluid" src="img/service-6.jpg" alt="">
                 <div class="service-text text-center">
                     <h4 class="text-white font-weight-medium px-3">Face Masking</h4>
@@ -250,22 +250,23 @@
                         <a class="btn btn-primary" href="#reservar">Reservar</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
+
         <div class="row justify-content-center bg-appointment mx-0">
             <div class="col-lg-6 py-5">
                 <div class="p-5 my-5" style="background: rgba(33, 30, 28, 0.7);">
                     <h1 class="text-white text-center mb-4" id="reservar">Solicitar Servicio</h1>
-                    <form>
+                    <form action="https://formspree.io/f/xleqajwy" method="POST">
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Your Name" required="required" />
+                                    <input type="text" class="form-control bg-transparent p-4" placeholder="Your Name" name="name" required="required" />
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Your Email" required="required" />
+                                    <input type="email" class="form-control bg-transparent p-4" placeholder="Your Email" name="email" required="required" />
                                 </div>
                             </div>
                         </div>
@@ -273,14 +274,14 @@
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker" name="date" />
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker"/>
+                                        <input type="text" class="form-control bg-transparent p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker" name="time" />
                                     </div>
                                 </div>
                             </div>
@@ -288,11 +289,12 @@
                         <div class="form-row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <select class="custom-select bg-transparent px-4" style="height: 47px;">
+                                    <select class="custom-select bg-transparent px-4" style="height: 47px;" name="service">
                                         <option selected>Seleccionar Servicio</option>
-                                        <option value="1">Masaje Terapeutico</option>
+                                        <option value="1">Terapia Fisica</option>
                                         <option value="2">Masaje Reductivo</option>
-                                        <option value="3">Tratamiento Facial</option>
+                                        <option value="3">Masaje Relajante</option>
+                                        <option value="4">Depilacion en Cera</option>
                                     </select>
                                 </div>
                             </div>
@@ -304,7 +306,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        
     <!-- Service End -->
 
 
@@ -324,8 +326,8 @@
                         <p>Nuestro equipo de SpaVenecia está dedicado a tu bienestar y comodidad. Estamos disponibles para atenderte con nuestros servicios de spa a domicilio según tus horarios y necesidades.
                              Contáctanos para coordinar una cita y disfrutar de una experiencia de relajación personalizada en el momento que más te convenga.</p>
                         <ul class="list-inline">
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Lunes a viernes: : 9:00 AM - 7:00 PM</li>
-                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sabado : 9:00 AM - 6:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Lunes a viernes: : 7:00 AM - 7:00 PM</li>
+                            <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Sabado : 7:00 AM - 7:00 PM</li>
                             <li class="h6 py-1"><i class="far fa-circle text-primary mr-3"></i>Domingos : Cerrado</li>
                         </ul>
                         <!-- <a href="" class="btn btn-primary mt-2">Book Now</a> -->
@@ -337,73 +339,6 @@
     <!-- Open Hours End -->
 
 
-    <!-- Pricing Start -->
-    <!-- <div class="container-fluid bg-pricing" style="margin: 90px 0;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5" style="min-height: 500px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/pricing.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-7 pt-5 pb-lg-5">
-                    <div class="pricing-text bg-light p-4 p-lg-5 my-lg-5">
-                        <div class="owl-carousel pricing-carousel">
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>49<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Basic Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>99<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">Family Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="bg-white">
-                                <div class="d-flex align-items-center justify-content-between border-bottom border-primary p-4">
-                                    <h1 class="display-4 mb-0">
-                                        <small class="align-top text-muted font-weight-medium" style="font-size: 22px; line-height: 45px;">$</small>149<small class="align-bottom text-muted font-weight-medium" style="font-size: 16px; line-height: 40px;">/Mo</small>
-                                    </h1>
-                                    <h5 class="text-primary text-uppercase m-0">VIP Plan</h5>
-                                </div>
-                                <div class="p-4">
-                                    <p><i class="fa fa-check text-success mr-2"></i>Full Body Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Deep Tissue Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Hot Stone Massage</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Tissue Body Polish</p>
-                                    <p><i class="fa fa-check text-success mr-2"></i>Foot & Nail Care</p>
-                                    <a href="" class="btn btn-primary my-2">Order Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Pricing End -->
 
 
     <!-- Team Start -->
@@ -416,23 +351,7 @@
                 </div>
             </div>
             <div class="row">
-                <!-- <div class="col-lg-3 col-md-6">
-                    <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        <div class="position-relative text-center">
-                            <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Olivia Mia</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
-                            </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+             
                 <div class="col-lg-3 col-md-6">
                     <div class="team position-relative overflow-hidden mb-5">
                         <img class="img-fluid" src="img/Anfer.jpg" alt="">
@@ -442,10 +361,10 @@
                                 <p class="m-0">Fisioterapeuta Expert</p>
                             </div>
                             <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                <!-- <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                                <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/profile.php?id=61558305328547"><i class="fab fa-facebook-f"></i></a>
+                                <!-- <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/anferfigueroad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -459,31 +378,15 @@
                                 <p class="m-0">CTO, Desarrollador Web</p>
                             </div>
                             <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                                <!-- <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                                <a class="btn btn-outline-primary btn-square mr-2" href="https://www.facebook.com/profile.php?id=61556116683571"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-primary btn-square mr-2" href="https://www.linkedin.com/in/jesus-gomez-santiago-137ba7293/"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/jgscoding/"><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 col-md-6">
-                    <div class="team position-relative overflow-hidden mb-5">
-                        <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        <div class="position-relative text-center">
-                            <div class="team-text bg-primary text-white">
-                                <h5 class="text-white text-uppercase">Kelly Walke</h5>
-                                <p class="m-0">Spa & Beauty Expert</p>
-                            </div>
-                            <div class="team-social bg-dark text-center">
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+               
             </div>
         </div>
     </div>
@@ -557,10 +460,10 @@
                     <p><i class="fa fa-phone-alt mr-2"></i>+57 321 3639344</p>
                     <p><i class="fa fa-envelope mr-2"></i>spamovil10@gmail.com</p>
                     <div class="d-flex justify-content-start mt-4">
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                        <!-- <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="https://www.facebook.com/profile.php?id=61558305328547"><i class="fab fa-facebook-f"></i></a>
+                        <!-- <a class="btn btn-lg btn-primary btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                        <a class="btn btn-lg btn-primary btn-lg-square" href="https://www.instagram.com/venecia_spa_movil/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-6 pl-lg-5">
@@ -576,26 +479,16 @@
                             </div>
                         </div>
                         <div class="col-sm-6 mb-5">
-                            <h5 class="text-white text-uppercase mb-4">Our Services</h5>
+                            <h5 class="text-white text-uppercase mb-4">Nuestros Servicios</h5>
                             <div class="d-flex flex-column justify-content-start">
                                 <a class="text-white-50 mb-2" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Terapia Fisica</a>
                                 <a class="text-white-50 mb-2" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Masajes Relajantes</a>
-                                <a class="text-white-50 mb-2" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Tratamiento Facial</a>
+                                <a class="text-white-50 mb-2" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Depilacion en Cera</a>
                                 <a class="text-white-50 mb-2" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Masaje con Vela Aromatica</a>
-                                <a class="text-white-50" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Nail Care</a>
+                                <!-- <a class="text-white-50" href="#reservar"><i class="fa fa-angle-right mr-2"></i>Nail Care</a> -->
                             </div>
                         </div>
-                        <!-- <div class="col-sm-12 mb-5">
-                            <h5 class="text-white text-uppercase mb-4">Newsletter</h5>
-                            <div class="w-100">
-                                <div class="input-group">
-                                    <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-primary px-4">Sign Up</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                       
                     </div>
                 </div>
             </div>
@@ -638,5 +531,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
-
 </html>
